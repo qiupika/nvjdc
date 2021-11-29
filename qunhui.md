@@ -1,19 +1,30 @@
 群晖安装 nolan jdc 的方法：
+
 1、安装 Git Server 套件并部署，自行百度，不详述；
+
 2、共享文件夹 docker 下新建路径 nolanjdc。查看其详情，获取绝对路径，比如
+
 /volume1/docker/nolanjdc；
 3、定位到nuolanjdc文件夹；
+
 cd /volume1/docker/nolanjdc
 4、拉取源码；
+
 4.1、拉源码 国内
+
 git clone https://ghproxy.com/https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
 4.2、拉远码国外
+
 git clone https://github.com/NolanHzy/nvjdcdocker.git /root/nolanjdc
+
 5、创建配置文件夹并定位到该文件夹；
 mkdir -p  Config && cd Config
+
 6、下载原始配置模板；
 6.1、国内(地址已失效，点击直达 (https://t.me/update_help/246)文件)
+
 wget -O Config.json   https://ghproxy.com/https://raw.githubusercontent.com/NolanHzy/nvjdc/main/Config.json
+
 6.2、国外(地址已失效，点击直达 (https://t.me/update_help/246)文件)
 wget -O Config.json  https://raw.githubusercontent.com/NolanHzy/nvjdc/main/Config.json
 
